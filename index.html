@@ -1,0 +1,138 @@
+<!DOCTYPE html> 
+<html lang = "ru">
+<head>
+<meta charset="UTF-8"> 
+<meta name='viewport' content='width=device-width, initial-scale=1.0' >
+<meta name="description"
+  content="SEDONA - сервис по подбору отелей и гостиниц в штате Седона.">
+<title>Sedona</title> 
+<link rel="shortcut icon" href="img/favikon.jpg" type="image/png">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet/less" type="text/css" href="main.less" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+</head>
+<body> 
+    <div class="header">
+        <div class="logo">
+            <img style="width: 100px; height: 84px;" src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип">
+        </div>
+        
+        <div class="main_nav">
+            <nav class="nav_closed">
+                <a class="nav__link hover" href="index.html">Главная </a><button class="button_closed"><img src="img/icon-cross.svg.png" alt=""></button>
+                <a class="nav__link hover" href="catalog.html">Фото и видео</a>
+                <a class="nav__link hover" href="form.html">Форма отзыва</a>
+                <a class="nav__link hover" href="https://htmlacademy.ru" target="_blank">html academy</a>
+            </nav> 
+            <button class="button_nav hover"> </button>
+        </div>
+    </div>
+    <div class="main_conteiner1">
+        <div class="title_main">
+            <div class="title1"><b>WELCOME</b></div>
+            <div class="title2">- to the gorgeous -</div>
+            <div class="title3"><b>SEDONA</b></div>
+            <div class="title4">"Beautefull the grand Canyon"</div>
+        </div>
+        <div class="main_vector">
+            <div class="vector"><img src="img/Vector.png" alt=""></div>
+            <div class="vector"><img src="img/Vector2.png" alt=""></div>
+        </div>
+    </div>
+    <div class="main_conteiner2">
+        <div class="title5"><b>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</b> </div>
+        <div class="title6">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </div>
+    </div>
+    <div class="main_conteiner3">
+        <div class="card1">НАСТОЯЩИЙ ГОРОДОК<br><br> — №1 —<br><br> СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div> 
+        <div class="img_div1"></div>
+    </div>
+    <div class="main_conteiner5">
+        <div class="block_conteiner5">
+            <img src="img/icon-house.svg.png" alt="">
+            <div>
+                <div><b>Жилье</b></div><div>Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+            </div>
+        </div>
+        <div class="block_conteiner5">
+            <img src="img/icon-gift.svg.png" alt="">
+            <div>
+                <div><b>Сувениры</b></div><div>Не только китайского, но и местного производства!</div>
+            </div>
+        </div>
+        <div class="block_conteiner5">
+            <img src="img/icon-burger.svg.png" alt="">
+            <div>
+                <div><b>Еда</b></div><div>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</div>
+            </div>
+            
+        </div>    
+    </div>
+    <div class="main_conteiner3">
+        <div class="card1"> ТАМ ЕСТЬ МОСТ ДЬЯВОЛА <br><br>— №2 —<br><br> Да, по нему можно пройти! Если вы осмелитесь конечно</div>
+        <div class="img_div2"></div>
+    </div>
+    
+    <div class="main_conteiner4">
+        
+        <ul>
+            <li class="card2">НЕБОЛЬШАЯ ПЛОЩАДЬ <br><br>— №3 —<br><br> ВСЕ интересные места находятся очень близко</li>
+            
+            <li class="card2 border_card">КРАСИВАЯ ДОРОГА <br><br>— №4 —<br><br> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем Не скучно</li>
+            
+            <li class="card2">МАЛО ТУРИСТОВ <br><br>— №5 —<br><br> Большинство едет в гранд каньон и толпится там</li>
+        </ul>
+    </div>
+    
+
+    <div class="conteiner_closed_box">
+        <div class="closed_hotel_box">
+            <div class="closed text">
+                Мы бы с радостью подобрали вам отели, но это учебный проект 
+            </div>
+            <img class="img_closed_box" src="img/smiling.png" alt="">
+            <button class="button_closed_box"><img src="img/icon-cross.svg.png" alt=""></button>
+        </div>
+        <div class="search_hotel_box">
+            <div class="box">
+                <div class="container">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <div class="main_conteiner6">
+        <div class="heading1">ЗАИНТЕРЕСОВАЛИСЬ?</div>
+        <div class="text_1">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</div>
+        <button class="search_hotel hover">Найти гостиницу</button>
+    </div>
+
+    <div>
+        <div id="map" style="min-width: 320px; min-height: 200px;"></div>
+    </div>
+
+    </div>
+   
+    <div class="footer">
+        <div class="sedona">#visitSEDONA </div>
+        <ul >
+            <li class="hover"><a href="https://twitter.com/" target="_blank"><img class="background_icon" src="img/icon-twitter.svg.png" alt=""></a></li>
+            <li class="hover"><a href="https://facebook.com/" target="_blank"><img class="background_icon" src="img/icon-facebook.svg.png" alt=""></a></li>
+            <li class="hover"><a href="https://www.youtube.com/watch?v=-pjw1_GucsA" target="_blank"><img class="background_icon" src="img/icon-youtube.svg.png" alt=""></a></li>
+        </ul>
+        <div class="htmlAcademy">
+            <div>Разработано</div>
+            <a href="https://htmlacademy.ru" target="_blank"><img src="img/htmlacademy.svg.png" alt=""></a>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="module" src="main.js"></script> 
+</body>
+</html>

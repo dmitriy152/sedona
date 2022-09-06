@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 56px;
+}
+.logo {
+  width: 102px;
+  height: 84px;
+  text-align: center;
+  top: 0px;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #81B3D2;
+  width: 320px;
+  height: 220px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+a.nav__link {
+  height: 55px;
+  width: 320px;
+  background: #81B3D2;
+  box-shadow: 0px 2px 0px rgba(1, 1, 1, 0.2);
+  margin-top: 1px;
+  justify-content: center;
+  text-decoration: none;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+.button_nav {
+  width: 22px;
+  height: 4px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  background: #81B3D2;
+  box-shadow: 0 8px 0 0 #81B3D2, 0 16px 0 0 #81B3D2;
+  border: none;
+}
