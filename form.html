@@ -36,64 +36,51 @@
         <div class="page_heading"><b>ОСТАВЬТЕ СВОЙ ОТЗЫВ</b></div>
         <div class="page_text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
     </div>
-   <div class="form_block1">
-        <div class="form_title"><b>Представьтесь:</b></div>
-        <div class="form_info">
-            <form action="">
-                <div class="form_name">
-                    <label for="">Имя:* </label><input type="text">
-                </div>
-                <div class="form_name">
-                    <label for="">Фамилия:* </label><input type="text">
-                </div>
-                <div class="form_name">
-                    <label for="">Отчество:* </label><input type="text">
-                </div>
-            </form>
-        </div>
-   </div>
-   <div class="form_block1">
-    <div class="form_title"><b>Контактная информация:</b></div>
-    <div class="form_info">
-        <form action="">
-            <label for="">Контактный телефон <input type="number"></label>
-            <label for="">Электронная почта <input type="email"></label>
-        </form>
-    </div>
-</div>
-<div class="form_block1">
-    <div class="form_title"><b>Общее впечатление:</b></div>
-    <div class="form_info">
-        <form action="">
-            <label for=""><input name= "emotion" class="checkbox_form1" type="radio" >Скорее положительное </label>
-            <label for=""><input name= "emotion" class="checkbox_form1" type="radio" >Скорее отрицательное </label>
-            <label for=""><input name= "emotion" class="checkbox_form1" type="radio" >Затрудняюсь ответить </label>
-        </form>
-    </div>
-</div>
-<div class="form_block1">
-    <div class="form_title"><b>Посещенные достопримечательности:</b></div>
-    <div class="form_info">
-        <form action="">
-            <label for=""><input class="checkbox_form2" type="checkbox">Мост Дьявола </label>
-            <label for=""><input class="checkbox_form2" type="checkbox">Гора Колокол </label>
-            <label for=""><input class="checkbox_form2" type="checkbox">Слайд-парк </label>
-            <label for=""><input class="checkbox_form2" type="checkbox">Красные скалы </label>
-        </form>
-    </div>
-</div>
-<div class="form_block1">
-    <div class="form_title"><b>Опишите свои эмоции:</b></div>
-    <div class="form_info">
-        <form action="">
-            <label for=""> <input type="text"></label>
-        </form>
-    </div>
-</div>
-<div class="main_conteiner6">
-    <button class="search_hotel">Отправить отзыв</button>
-</div>
+    <div class="form_sedona">
+        <form>
+            <div class="form_block1">
+                <div class="title_form">Представьтесь:</div>
+                <div class="input_block1"><label for="">Фамилия:*</label><input required></div>
+                <div class="input_block1"><label for="">Имя:*</label><input required></div>
+                <div class="input_block1"><label for="">Отчество:*</label required><input></div>
+            </div>
+            <div class="form_block2">
+                <div class="title_form">Контактная информация:</div>
+                <div><label for="">Контактный телефон</label></div><div class="input_contact"><input required><div class="contact_img_form"><img src="./img/phone-svg.png" alt=""></div></div>
+                <div><label for="">Электронная почта</label></div><div class="input_contact"><input required><div class="contact_img_form"><img  src="./img/mail.svg.jpg" alt=""></div></div>
+            </div>
+            <div class="form_block3">
+                <div class="title_form"><b>Общее впечатление:</b></div>
+                <label for=""><input name="emotion" class="checkbox_form1" type="radio" required>Скорее положительное </label>
+                <label for=""><input name="emotion" class="checkbox_form1" type="radio" required>Скорее отрицательное </label>
+                <label for=""><input name="emotion" class="checkbox_form1" type="radio" required>Затрудняюсь ответить </label>
+            </div>
+            <div class="form_block4">
+                <div class="title_form"><b>Посещенные достопримечательности:</b></div>
+                <label for=""><input class="checkbox_form2" type="checkbox" >Мост Дьявола </label>
+                <label for=""><input class="checkbox_form2" type="checkbox" >Гора Колокол </label>
+                <label for=""><input class="checkbox_form2" type="checkbox" >Слайд-парк </label>
+                <label for=""><input class="checkbox_form2" type="checkbox" >Красные скалы </label>
+            </div>
 
+            </div>
+            <div class="conteiner_button_form">
+                <div class="title_form"><b>Опишите свои эмоции:</b></div>
+                <input class="comment_form" type="text">
+                <input class="form_button submite_form" type="submit" value="ОТПРАВИТЬ ОТЗЫВ">
+            </div>
+            
+        </form>
+    </div>
+    <div class="successfully_sent closed_form">
+        <div class="bg_white">
+            <div class="title_form"><b>Ваш отзыв отправлен!</b></div>
+            <div class="title_form_sent">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</div>
+        </div>
+        <div class="bg_grey">
+            <button class="form_button form_button_send">Закрыть окно</button>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="sedona">#visitSEDONA </div>
@@ -109,6 +96,6 @@
     </div>
     
     
-    <script src="main.js"></script> 
+    <script type="module" src="./js/main.js"></script> 
 </body>
 </html>
