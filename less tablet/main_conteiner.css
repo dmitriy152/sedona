@@ -1,0 +1,54 @@
+.main_conteiner {
+  background-image: url(../../img/back-mobile.jpg.png);
+  min-width: 320px;
+  max-height: 389px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  object-fit: cover;
+  background-position: 50% -9px;
+}
+.title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_vector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector {
+  object-fit: cover;
+  height: auto;
+  width: auto;
+  margin-bottom: -5px;
+}
+.title1 {
+  color: #81B3D3;
+  position: absolute;
+  top: 140px;
+  font-size: 24px;
+}
+.title2 {
+  color: #766458;
+  position: absolute;
+  top: 170px;
+  font-size: 20px;
+}
+.title3 {
+  color: #FFFFFF;
+  font-size: 60px;
+  position: absolute;
+  top: 220px;
+}
+.title4 {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  top: 300px;
+}
