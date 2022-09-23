@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 25px;
+  height: 120px;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+.footer li {
+  list-style: none;
+  background: #81B3D2;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.footer div {
+  text-transform: uppercase;
+}
+.footer .sedona {
+  font-weight: 1000;
+}
+.footer .htmlAcademy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: none;
+  min-width: 150px;
+}
+.footer .htmlAcademy a {
+  margin: 5px;
+}
+.footer .background_icon {
+  background-size: cover;
+}

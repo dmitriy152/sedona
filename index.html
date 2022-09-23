@@ -13,7 +13,7 @@
 </head>
 <body> 
     <div class="header">
-        <div class="logo">
+        <div class="logo closed_logo">
             <img style="width: 100px; height: 84px;" src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип">
         </div>
         
@@ -21,12 +21,18 @@
             <nav class="nav_closed">
                 <a class="nav__link hover" href="index.html">Главная </a><button class="button_closed"><img src="img/icon-cross.svg.png" alt=""></button>
                 <a class="nav__link hover" href="catalog.html">Фото и видео</a>
+                <a><img class="closed_logo" style="width: 100px; height: 84px;" src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип"></a>
                 <a class="nav__link hover" href="form.html">Форма отзыва</a>
                 <a class="nav__link hover" href="https://htmlacademy.ru" target="_blank">html academy</a>
             </nav> 
-            <button class="button_nav hover"> </button>
+            <button class="button_nav hover">
+                <div class="button_open_icon"></div>
+                <div class="button_open_icon"></div>
+                <div class="button_open_icon"></div>
+            </button>
         </div>
     </div>
+
     <div class="main_conteiner1">
         <div class="title_main">
             <div class="title1"><b>WELCOME</b></div>
@@ -39,14 +45,17 @@
             <div class="vector"><img src="img/Vector2.png" alt=""></div>
         </div>
     </div>
+
     <div class="main_conteiner2">
         <div class="title5"><b>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</b> </div>
         <div class="title6">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон! </div>
     </div>
-    <div class="main_conteiner3">
+
+    <div class="main_conteiner3 no-reverse">
         <div class="card1">НАСТОЯЩИЙ ГОРОДОК<br><br> — №1 —<br><br> СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</div> 
         <div class="img_div1"></div>
     </div>
+
     <div class="main_conteiner5">
         <div class="block_conteiner5">
             <img src="img/icon-house.svg.png" alt="">
@@ -68,22 +77,21 @@
             
         </div>    
     </div>
+    
     <div class="main_conteiner3">
         <div class="card1"> ТАМ ЕСТЬ МОСТ ДЬЯВОЛА <br><br>— №2 —<br><br> Да, по нему можно пройти! Если вы осмелитесь конечно</div>
         <div class="img_div2"></div>
     </div>
     
     <div class="main_conteiner4">
-        
         <ul>
-            <li class="card2">НЕБОЛЬШАЯ ПЛОЩАДЬ <br><br>— №3 —<br><br> ВСЕ интересные места находятся очень близко</li>
+            <li class="card2"><b>НЕБОЛЬШАЯ ПЛОЩАДЬ </b><br><br>— №3 —<br> ВСЕ интересные места находятся очень близко</li>
             
-            <li class="card2 border_card">КРАСИВАЯ ДОРОГА <br><br>— №4 —<br><br> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем Не скучно</li>
+            <li class="card2 border_card"><b>КРАСИВАЯ ДОРОГА</b> <br>— №4 —<br><br> ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем Не скучно</li>
             
-            <li class="card2">МАЛО ТУРИСТОВ <br><br>— №5 —<br><br> Большинство едет в гранд каньон и толпится там</li>
+            <li class="card2"><b>МАЛО ТУРИСТОВ</b> <br><br>— №5 —<br> Большинство едет в гранд каньон и толпится там</li>
         </ul>
     </div>
-    
 
     <div class="conteiner_closed_box">
         <div class="closed_hotel_box">
@@ -114,8 +122,6 @@
     <div>
         <div id="map" style="min-width: 320px; min-height: 200px;"></div>
     </div>
-
-    </div>
    
     <div class="footer">
         <div class="sedona">#visitSEDONA </div>
@@ -133,6 +139,7 @@
     
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script type="module" src="main.js"></script> 
+    <script type="module" src="./js/main.js"></script> 
+    <script src="./js/map.js"></script> 
 </body>
 </html>
