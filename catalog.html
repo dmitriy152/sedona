@@ -13,18 +13,23 @@
 </head>
 <body> 
     <div class="header">
-        <div class="logo">
-            <img src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип">
+        <div class="logo closed_logo">
+            <img style="width: 100px; height: 84px;" src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип">
         </div>
         
         <div class="main_nav">
             <nav class="nav_closed">
-                <a class="nav__link " href="index.html">Главная </a><button class="button_closed"><img src="img/icon-cross.svg.png" alt=""></button>
-                <a class="nav__link" href="catalog.html">Фото и видео</a>
-                <a class="nav__link" href="form.html">Форма отзыва</a>
-                <a class="nav__link" href="https://htmlacademy.ru" target="_blank">html academy</a>
+                <a class="nav__link hover" href="index.html">Главная </a><button class="button_closed"><img src="img/icon-cross.svg.png" alt=""></button>
+                <a class="nav__link hover" href="catalog.html">Фото и видео</a>
+                <a><img class="closed_logo" style="width: 100px; height: 84px;" src="img/logotype-mobile.svg.png" alt="Тут должен быть логотип"></a>
+                <a class="nav__link hover" href="form.html">Форма отзыва</a>
+                <a class="nav__link hover" href="https://htmlacademy.ru" target="_blank">html academy</a>
             </nav> 
-            <button class="button_nav"> </button>
+            <button class="button_nav hover">
+                <div class="button_open_icon"></div>
+                <div class="button_open_icon"></div>
+                <div class="button_open_icon"></div>
+            </button>
         </div>
     </div>
     <div class="main_heading">
@@ -37,47 +42,73 @@
         <div class="page_text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
         <div class="catalog_card">
             <div class="photo-1"></div>
-            <div class="card_title"><b>Народные просторы</b></div>
-            <div class="card_text">Автор фото: Борис</div>
-            <div class="card_like">
-                 <img src="img/like-icon.svg.png" alt="">
-                 <div><b>1350</b></div>
+            <div class="card_content">
+                <div class="card_title"><b>Народные просторы</b></div>
+                <div class="card_text">Автор фото: Борис</div>
+                <div class="card_like">
+                    <button class="like_button_catalog">
+                        <div class="like_icon"></div>
+                        <div class="counter_like_catalog"><b>1350</b></div>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="catalog_card">
-            <div class="photo-2"></div>
-            <div class="card_title"><b>Местная растительность</b></div>
-            <div class="card_text">Автор фото: Сергей</div>
-            <div class="card_like">
-                 <img src="img/like-icon.svg.png" alt="">
-                 <div><b>143</b></div>
+        <div class="secondary_card">
+            <div class="catalog_card secondary">
+                <div class="photo-2"></div>
+                <div class="card_content">
+                    <div class="card_title"><b>Местная растительность</b></div>
+                    <div class="card_text">Автор фото: Сергей</div>
+                    <div class="card_like">
+                        <button class="like_button_catalog">
+                            <div class="like_icon"></div>
+                            <div class="counter_like_catalog"><b>143</b></div>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="catalog_card">
-            <div class="photo-3"></div>
-            <div class="card_title"><b>Дорога на север</b></div>
-            <div class="card_text">Автор фото: Пётр</div>
-            <div class="card_like">
-                 <img src="img/like-icon.svg.png" alt="">
-                 <div><b>96</b></div>
+            <div class="catalog_card secondary">
+                <div class="photo-3"></div>
+                <div class="card_content card_content_3">
+                    <div class="card_title"><b>Дорога на север</b></div>
+                    <div class="card_text">Автор фото: Пётр</div>
+                    <div class="card_like">
+                        <button class="like_button_catalog">
+                            <div class="like_icon"></div>
+                            <div class="counter_like_catalog"><b>96</b></div>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="catalog_card catalog_card_4">
-            <div class="photo-4"></div>
-            <div class="card_title"><b>Мост дьявола</b></div>
-            <div class="card_text">Автор фото: Антон</div>
-            <div class="card_like">
-                 <img src="img/like-icon.svg.png" alt="">
-                 <div><b>254</b></div>
+            <div class="catalog_card catalog_card_4 secondary">
+                <div class="photo-4"></div>
+                <div class="card_content">
+                    <div class="card_title"><b>Мост дьявола</b></div>
+                    <div class="card_text">Автор фото: Антон</div>
+                    <div class="card_like">
+                        <button class="like_button_catalog">
+                            <div class="like_icon"></div>
+                            <div class="counter_like_catalog"><b>256</b></div>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div>
         <div class="page_heading"><b>ВЫ ЕЩЁ СОМНЕВАЕТЕСЬ?</b></div>
         <div class="page_text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
-        <iframe width="320" height="200" src="https://www.youtube.com/embed/_qHjLngt7OI" title="13 Things to do in Sedona, Arizona: A Travel Guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen poster="placeholder.png"></iframe>
-    </div>
-   
+        <div class="video">
+            <a class="video__link" href="https://youtu.be/sbrroNzY6dI">
+                <picture>
+                    <source srcset="https://i.ytimg.com/vi_webp/sbrroNzY6dI/maxresdefault.webp" type="image/webp">
+                    <img class="video__media" src="https://i.ytimg.com/vi/sbrroNzY6dI/maxresdefault.jpg" alt="1. Пилот, разборы, ответы и лайвы">
+                </picture>
+            </a>
+            <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48"><path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"></path><path class="video__button-icon" d="M 45,24 27,14 27,34"></path></svg>
+            </button>
+        </div>
     <div class="footer">
         <div class="sedona">#visitSEDONA </div>
         <ul>
@@ -91,7 +122,6 @@
         </div>
     </div>
     
-    
-    <script src="main.js"></script> 
+    <script type="module" src="./js/main.js"></script> 
 </body>
 </html>

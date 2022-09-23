@@ -6,5 +6,6 @@ body{
     position: relative;
     min-width: 320px;
     max-width: 1200px;
+    font-family: 'PT Sans', sans-serif;
 }
 
