@@ -1,14 +1,14 @@
 .main_heading{
-    background-image: url(./img/header_page_catalog.png);
+    background-image: url(./img/header_tablet.jpg);
     background-size: cover;
-    max-height: 200px;
+    max-height: 600px;
     width: 100%;
-    height: 100%;
+    height: 300px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-position: 50% -9px;
+    background-position: 50% -5px;
     
     .title_main{
         display: flex;
@@ -21,18 +21,19 @@
         color: #FFFFFF;
         font-size: 60px;
         position: absolute;
-        top: 100px;
+        top: 150px;
     }
 }
 .page_content{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .page_heading{
     text-align: center;
     margin-bottom: 30px;
     margin-top: 32px;
-    font-size: 20;
+    font-size: 20px;
 }
 .page_text{
     text-align: center;
@@ -43,15 +44,36 @@
     text-transform: uppercase;
 }
 .catalog_card{
-    border-top: solid #E5E5E5 2px;
-    padding: 20px 20px;
+    border-top: none;
+    padding: 20px 20px 0px 20px;
+}
+.card_content{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+}
+.card_content_3{
+    background-color: #EAEAEA;
+}
+.secondary_card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    .secondary{
+        width: 50%;
+        padding: 0px 0px 0px;
+    }
 }
 .catalog_card_4{
-    border-bottom: solid #E5E5E5 2px;
+    border-bottom: none;
 }
 .card_text{
     color: #333333;
     margin-top: 10px;
+
 }
 .card_like{
     display: flex;
@@ -65,7 +87,7 @@
 .card_title{
     text-transform: uppercase;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .photo-1{
     background-image: url(./img/photo-1-mobile.jpg.png);
@@ -104,7 +126,9 @@
     align-items: center;
     height: 40px;
     background-color: white;
+    border-radius: 10px;
     border: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);;
     .like_icon{
         width: 30px;
         height: 30px;

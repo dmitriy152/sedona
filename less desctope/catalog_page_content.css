@@ -1,0 +1,147 @@
+.main_heading {
+  background-image: url(img/header_tablet.jpg);
+  background-size: cover;
+  max-height: 600px;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: 50% -5px;
+}
+.main_heading .title_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_heading .title1 {
+  color: #FFFFFF;
+  font-size: 60px;
+  position: absolute;
+  top: 150px;
+}
+.page_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+.page_heading {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  background-color: white;
+}
+.page_text {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  font-size: 12;
+  text-transform: uppercase;
+  background-color: white;
+}
+.catalog_card {
+  border-top: none;
+  padding: 20px 20px 0px 20px;
+}
+.card_content {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  background-color: #f2f2f2;
+}
+.card_content_3 {
+  background-color: #EAEAEA;
+}
+.secondary_card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.secondary_card .secondary {
+  width: 50%;
+  padding: 0px 0px 0px;
+}
+.catalog_card_4 {
+  border-bottom: none;
+}
+.card_text {
+  color: #333333;
+  margin-top: 10px;
+}
+.card_like {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.card_like div {
+  margin-left: 15px;
+}
+.card_title {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 0px;
+}
+.photo-1 {
+  background-image: url(img/photo-1-mobile.jpg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 280px;
+}
+.photo-2 {
+  background-image: url(img/photo-2-mobile.jpg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 280px;
+}
+.photo-3 {
+  background-image: url(img/photo-3-mobile.jpg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 280px;
+}
+.photo-4 {
+  background-image: url(img/photo-bridge@1x\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  min-height: 280px;
+}
+.like_button_catalog {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.like_button_catalog .like_icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 0px;
+  background-image: url(img/like-icon1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.like_button_catalog .like_toggle {
+  background-image: url(img/like\ icon2.jpg);
+}
+.counter_like_catalog {
+  font-weight: 700;
+}

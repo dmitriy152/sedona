@@ -1,20 +1,28 @@
 
 form{
-    width: 90%;
-    margin-left: 20px;
+    margin-left: 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 .form_sedona{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
 }
 .form_block1{
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    width: 100%;
-    border-top: 1px solid #E5E5E5;
-    border-bottom: 1px solid #E5E5E5;
+    width: 50%;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+    order: 2;
     input{
         margin-left: 20px;
         width: 100%;
@@ -27,10 +35,12 @@ form{
     }
     .input_block1{
         width: 100%;
+        height: 63px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-top: 0px;
         
     }
     label{
@@ -41,10 +51,10 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
     width: 100%;
     font-weight: 400;
     border-bottom: 1px solid #E5E5E5;
+    order: 3;
     
     input{
         text-align: left;
@@ -78,35 +88,41 @@ form{
 .form_block3{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-bottom: 1px solid #E5E5E5;
+    width: 50%;
+    border-bottom: none;
+    order: 1;
     input{
         width: 40px;
-        height: 40px;
+        height: 60px;
         vertical-align: middle;
+        margin-right: 10px;
     }
     label{
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         font-weight: 600;
     }
 }
 .form_block4{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     border-bottom: 1px solid #E5E5E5;
+    order: 4;
     .label_form_group{
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
         input{
             width: 40px;
             height: 40px;
             vertical-align: middle;
         }
         label{
-            font-weight: 600;
+            width: 35%;
             margin-bottom: 15px;
         }
     }
@@ -132,12 +148,11 @@ form{
     
 }
 .conteiner_button_form{
-    
+    order: 5;
     align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 20px;
 }
 .form_button{
     -webkit-appearance: none;
@@ -158,7 +173,10 @@ form{
     align-items: center;
     position: relative;
     .bg_white{
-        padding: 20px 20px 20px 20px;
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        padding-top: 10px;
         margin-top: 25px;
         background-color: white;
         height: 130px;
@@ -169,6 +187,7 @@ form{
         background-color: #F2F2F2;
         height: 100px;
         width: 100%;
+        padding: 0px 0px 0px 0px;
         display: flex;
         align-items: center;
         justify-content: center;
